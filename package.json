@@ -1,0 +1,21 @@
+{
+  "name": "intro-component-with-signup-form",
+  "version": "1.0.0",
+  "description": "",
+  "parcel-namer-custom": {
+    ".(sass)$": "app/css/[name]-[hash].min.[type]",
+    ".js$": "app/js/[name].[hash].[ext]",
+    ".(svg|png|jpe?g)$": "app/images/[name].[hash].[ext]"
+  },
+  "scripts": {
+    "dev": "parcel ./src/index.html --port 3000 --https --dist-dir _dev",
+    "build": "parcel build ./src/index.html --dist-dir build"
+  },
+  "author": "claude",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.4.1",
+    "parcel": "^2.4.1",
+    "parcel-namer-custom": "^0.2.0"
+  }
+}
