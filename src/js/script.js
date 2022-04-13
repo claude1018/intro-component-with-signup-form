@@ -16,7 +16,7 @@ signUpForm.addEventListener('submit', (e) => {
     }
   });
   if (emailError) return;
-  if (email.value.match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}/)) return;
+  if (email.value.match(/^(.+)@(.+)$/)) return;
   errorStyle(email, 'Looks like this is not an email');
   e.preventDefault();
 });
